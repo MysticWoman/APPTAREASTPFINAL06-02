@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: monospace;
+}
+
+.date {
+    color: var(--white);
+    padding: 50px 15px 5px 0px;
+    margin-top: -1.6%;
+    margin-right: -107%;
+    color: black;
+    font-family: 'Font Awesome 6 Free';
+}    
+
+ /* Header  */
+
+.font{
+    background-image: url(./imagenes/Working.gif);
+    background-position: center 77%;
+    background-size: cover;
+    background-position-x: 4%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(245, 93, 217);
+}
+
+.container-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: -44%;
+}
+
+.title{
+    font-size: 40px;
+    font-family: monospace;
+}
+
+#bdark{
+    margin-left: -6%;
+
+}
+
+.dark{
+    background-color: transparent;
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    margin-left: 460%;
+}
+
+/* BUTTON FOR LIGHT MODE */
+/* .light{
+    background-color: transparent;
+ /* font-size: 15px;
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+} */
+
+body.darkmode{
+        background-color: black;
+        color: white;
+}
+
+/* .darkmode header{
+    background-color: black;
+    color: white;
+}*/
+
+.addATask.darkmode{
+    background-color: black;
+} 
+
+.addATask{
+    margin-left: 47%;
+    font-size: x-large;
+    background-color: rgb(248, 244, 247);
+    color: rgb(226, 43, 220);
+    border-color: rgb(226, 43, 220);
+}
+
+.contain-modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.task {
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: 2%;
+    margin-top: -202%;
+    margin-left: -3%;
+}
+
+body .contain-modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.32);
+    top: 0;
+    display: none;
+}
+
+ body .contain-modal .modal { 
+    background-color: white;
+    background-position: center;
+    border: 1px black solid;
+    border-radius: 36px;
+    box-shadow: 0px 0px 15px 0 white;
+    height: 20rem;
+    left: 44%;
+    padding: 2rem;
+    position: absolute;
+    top: 25%;
+    width: 10rem;
+    
+}
+
+body .show-modal {
+    display: block;
+}
+
+.form{
+    margin-top: 10px;
+}
+
+.modal{
+    background-image: url(./imagenes/window.gif)
+    
+}
+
+.submit{
+    color: rgb(255, 255, 255);
+     background: transparent;
+    border: none;
+    margin-left: 100%;
+    margin-top: 149%;;
+}
+
+.closeModal{
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: none;
+    margin-left: -10%;
+    margin-top: 198%;
+}
+
+.fa-regular fa-circle-xmark{
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: none;
+    margin-left: 100%;
+    margin-top: 198%;;
+}
+
+/* .added-task{
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: none;
+    margin-left: 70%;
+} */
+

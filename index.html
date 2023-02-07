@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <header class="font">
+      <div class="date">
+        <div id="fecha"></div>
+    </div>
+      <nav>
+        <div class="container-title">
+          <p class="title">To Do List</p>
+        </div>
+        <div id="bdark">
+          <img
+            src="./imagenes/darth-vader1.png"
+            alt="dark-mode-button"
+            class="dark"
+          />
+        </div>
+      </nav>
+    </header>
+    <br /><br /><br />
+    <button class="addATask" id="open-modal">Add a Task</button>
+    <section class="contain-modal">
+      <form class="form">
+        <div class="modal">
+          <div class="close-modal" >
+            <button class="closeModal" type="button" id="close-modal">
+              <i class="fa-regular fa-circle-xmark"></i>
+
+          </div>  
+          <div class="task">
+            <input id="title" type="text" placeholder="Title of the task" />
+            <span id="titleErrors"></span>
+            <br />
+            <div>
+              <select id="state">
+                <option value="" disabled selected>Select a state</option>
+                <option value="Pendient">Pendient</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Finished">Finished/Done</option>
+              </select>
+              <span id="stateErrors"></span>
+            </div>
+          </div>
+          <button id="create" type="submit" class="submit">
+            <i class="fa-regular fa-circle-check"></i>
+          </button>
+          
+          <!-- <button class="added-task" type="button" id="added-task"></button>-->
+        </div>
+        <br /><br />
+       
+        <span id="formErrors"></span>
+      </form>
+    </section>
+    <script src="./darkmode.js"></script>
+    <script src="./modal.js"></script>
+    <script src="./task.js" ></script>
+  </body>
+</html>
